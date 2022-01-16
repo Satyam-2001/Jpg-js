@@ -18,6 +18,7 @@ npm install jpg-js
   <li><a href="#Open/Load-image">Open/Load Image </a></li>
   <li><a href="#resize">Resize image</a></li>
   <li><a href="#crop">Crop image</a></li>
+  <li><a href="#grey">Greyscale image</a></li>
 </ul>
 
 
@@ -98,10 +99,30 @@ img.save("image.jpeg")
   <img src="https://user-images.githubusercontent.com/88069082/149674077-ff5f7ccf-9445-4043-97bf-79b9c14de31d.jpeg"/>
 </p> 
 
+<h2 id="grey">Greyscale image</h2>
 
+```javascript
+const Image = require("jpg-js")
 
+const img = Image.open("img.jpeg")
 
-<!-- 
+//Converting image to greyscale
+img.greyscale()
+
+//Saving processed image as image.jpeg
+img.save("image.jpeg")!
+```
+
+**Actual Image (img.jpeg)**
+
 <p align="center">
-  <img src="https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true" height="250px"/>
-</p> -->
+  <img src="https://user-images.githubusercontent.com/88069082/149674420-9eee5d37-c4cc-4ca9-a542-a9628fc2f81d.jpeg" />
+</p> 
+
+**Greyscale Image (image.jpeg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149674418-7c18fe0e-0a47-4bca-97b9-a103cd28d7b7.jpeg" />
+</p> 
+
+
