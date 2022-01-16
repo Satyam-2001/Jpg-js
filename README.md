@@ -19,6 +19,7 @@ npm install jpg-js
   <li><a href="#resize">Resize image</a></li>
   <li><a href="#crop">Crop image</a></li>
   <li><a href="#grey">Greyscale image</a></li>
+  <li><a href="#array">Image From Array</a></li>
 </ul>
 
 
@@ -119,10 +120,57 @@ img.save("image.jpeg")!
   <img src="https://user-images.githubusercontent.com/88069082/149674420-9eee5d37-c4cc-4ca9-a542-a9628fc2f81d.jpeg" />
 </p> 
 
-**Greyscale Image (image.jpeg)**
+**Image From Array (image.jpeg)**
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/88069082/149674418-7c18fe0e-0a47-4bca-97b9-a103cd28d7b7.jpeg" />
 </p> 
 
+<h2 id="grey">Image From Array</h2>
 
+```javascript
+const Image = require("jpg-js");
+
+//Creating a 1000 x 1000 size image
+const height = 1000;
+const width = 1000;
+
+//Allocating Buffer for image data
+const data = new Buffer.alloc(width * height * 4);
+
+//Putting data into Buffer
+for(let i = 0 ; i < height ; i++){
+    const row = i * width * 4;
+    for(let j = 0 ; j < width ; j++){
+        const cell = row + j * 4;
+
+        // Filling first-half with red
+        if(i < width/2){
+            data[cell] = 255;     // Red
+            data[cell+1] = 0;     // Green
+            data[cell+2] = 0;     // Blue
+            data[cell+3] = 255;   // Alpha [ignore for jpeg]
+        }
+
+        // Filling secondt-half with green
+        else{
+            data[cell] = 0;       // Red
+            data[cell+1] = 255;   // Green
+            data[cell+2] = 0;     // Blue
+            data[cell+3] = 255;   // Alpha [ignore for jpeg]
+        }
+    }
+}
+
+//Creating image from array
+img = Image.fromarray(data,width,height);
+
+//Saving image as image.jpeg
+img.save("image.jpeg");
+```
+
+**image.jpeg** &nbsp; &nbsp; **Size : 1000 * 1000**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149675264-84e7d3d4-bc6b-470e-bc46-c22a3244d6cf.jpeg" height="600px"/>
+</p> 
