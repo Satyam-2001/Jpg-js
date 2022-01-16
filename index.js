@@ -32,7 +32,7 @@ class Image{
         this.width = width;
         this.height = height;
     }
-    crop(left,upper,right,low){
+    crop([left,upper,right,low]){
         if(left >= right || upper >= low)
             throw new Error("Arrange parameter left,upper,right,low accordingly!!");
         if(left < 0 || right>this.width || upper<0 || low>this.height)
