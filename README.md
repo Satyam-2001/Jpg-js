@@ -1,10 +1,11 @@
 # JpegJS
 
 
-Read, manipulate and write image data and styles .
-
+Read, manipulate, write, encode and decode image data.
 
 # Installation
+
+This module is installed via npm:
 
 ```shell
 npm install jpg-js
@@ -14,11 +15,33 @@ npm install jpg-js
 
 <ul>
   <li><a href="#importing">Importing</a></li>
+  <li><a href="#Open/Load-image">Open/Load Image </a></li>
 </ul>
 
 
-# Importing[⬆](#contents)<!-- Link generated with jump2header -->
+<h1 id="importing">Importing⬆</h1>
+
 
 ```javascript
 const Image = require('jpg-js');
+```
+
+<h2 id="Open/Load-image">Open/Load image</h2>
+
+To load a image, use open function :
+
+```javascript
+const Image = require('jpg-js');
+
+const img = Image.open('image.jpg');
+console.log(img);
+
+/*
+Image {
+  height: 664,
+  width: 1601,
+  data: <Buffer 92 01 12 ff 72 00 12 ff 66 00 10 ff 5c 00 0d ff 12 ff 78 00 ... 4252206 more bytes>
+}
+*/
+
 ```
