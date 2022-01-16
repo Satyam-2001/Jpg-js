@@ -17,10 +17,12 @@ npm install jpg-js
   <li><a href="#importing">Importing</a></li>
   <li><a href="#Open/Load-image">Open/Load Image </a></li>
   <li><a href="#resize">Resize image</a></li>
+  <li><a href="#crop">Crop image</a></li>
+  <li><a href="#grey">Greyscale image</a></li>
 </ul>
 
 
-<h1 id="importing">Importing⬆</h1>
+<h1 id="importing">Importing</h1>
 
 
 ```javascript
@@ -64,15 +66,63 @@ img.save("image.jpg")
 
 **Actual Image (img.jpg)**  &nbsp;  **Size: 664 x 1601**
 
-![img.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/img.jpg?raw=true)
+![img](https://user-images.githubusercontent.com/88069082/149673405-b47f71c1-0777-4038-9247-5b0c9d166f22.jpg)
 
 
 **Resized Image (image.jpg)**  &nbsp;  **Size: 1000 x 1500**
 
-![image.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true)
+![image](https://user-images.githubusercontent.com/88069082/149673401-6ab5bd5b-82ca-40df-9999-b17b92d65b3e.jpg)
 
+<h2 id="crop">Crop image</h2>
 
-<!-- 
+```javascript
+const Image = require("jpg-js")
+
+const img = Image.open("img.jpeg")
+
+//Crop a image left:0 , upper:0 , right:300 , low:200
+img.crop([0,0,300,200])
+
+//Saving processed image as image.jpeg
+img.save("image.jpeg")
+```
+
+**Actual Image (img.jpeg)**
+
 <p align="center">
-  <img src="https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true" height="250px"/>
-</p> -->
+  <img src="https://user-images.githubusercontent.com/88069082/149674079-68f1d7b2-f8b7-4c74-972f-6f45b38198ca.jpeg"/>
+</p> 
+
+**Crop Image (image.jpeg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149674077-ff5f7ccf-9445-4043-97bf-79b9c14de31d.jpeg"/>
+</p> 
+
+<h2 id="grey">Greyscale image</h2>
+
+```javascript
+const Image = require("jpg-js")
+
+const img = Image.open("img.jpeg")
+
+//Converting image to greyscale
+img.greyscale()
+
+//Saving processed image as image.jpeg
+img.save("image.jpeg")!
+```
+
+**Actual Image (img.jpeg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149674420-9eee5d37-c4cc-4ca9-a542-a9628fc2f81d.jpeg" />
+</p> 
+
+**Greyscale Image (image.jpeg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149674418-7c18fe0e-0a47-4bca-97b9-a103cd28d7b7.jpeg" />
+</p> 
+
+
