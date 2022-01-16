@@ -1,0 +1,36 @@
+{
+  "name": "jpg-js",
+  "version": "1.0.0",
+  "description": "Advanced image processing and manipulation in JavaScript. ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam-2001/Jpg-js.git"
+  },
+  "keywords": [
+    "image",
+    "jpeg",
+    "jpg",
+    "size",
+    "resize",
+    "crop",
+    "grey",
+    "rgb",
+    "rgba",
+    "png",
+    "encode",
+    "decode"
+  ],
+  "author": "Satyam Lohiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyam-2001/Jpg-js/issues"
+  },
+  "homepage": "https://github.com/Satyam-2001/Jpg-js#readme"
+}
