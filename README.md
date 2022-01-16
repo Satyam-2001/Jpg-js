@@ -126,7 +126,7 @@ img.save("image.jpeg")!
   <img src="https://user-images.githubusercontent.com/88069082/149674418-7c18fe0e-0a47-4bca-97b9-a103cd28d7b7.jpeg" />
 </p> 
 
-<h2 id="grey">Image From Array</h2>
+<h2 id="array">Image From Array</h2>
 
 ```javascript
 const Image = require("jpg-js");
