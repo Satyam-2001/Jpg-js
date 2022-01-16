@@ -145,7 +145,7 @@ for(let i = 0 ; i < height ; i++){
         const cell = row + j * 4;
 
         // Filling first-half with red
-        if(i < width/2){
+        if(i < height/2){
             data[cell] = 255;     // Red
             data[cell+1] = 0;     // Green
             data[cell+2] = 0;     // Blue
