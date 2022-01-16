@@ -62,12 +62,12 @@ img.save("image.jpg")
 
 ```
 
-**Actual Image (img.jpg)    Size: 664 x 1601**
+**Actual Image (img.jpg)**  &nbsp;  **Size: 664 x 1601**
 
 ![img.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/img.jpg?raw=true)
 
 
-**Resized Image (image.jpg)    Size: 1000 x 1500**
+**Resized Image (image.jpg)**  &nbsp;  **Size: 1000 x 1500**
 
 ![image.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true)
 
