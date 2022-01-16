@@ -61,3 +61,12 @@ img.resize(1500,1000)
 img.save("image.jpg")
 
 ```
+
+**Actual Image (img.jpg)**
+
+![img.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/img.jpg?raw=true)
+
+
+**Resized Image (image.jpg)**
+
+![image.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true)
