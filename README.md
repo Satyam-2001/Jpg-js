@@ -64,13 +64,12 @@ img.save("image.jpg")
 
 **Actual Image (img.jpg)**  &nbsp;  **Size: 664 x 1601**
 
-![img.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/img.jpg?raw=true)
+![img](https://user-images.githubusercontent.com/88069082/149673405-b47f71c1-0777-4038-9247-5b0c9d166f22.jpg)
 
 
 **Resized Image (image.jpg)**  &nbsp;  **Size: 1000 x 1500**
 
-![image.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true)
-
+![image](https://user-images.githubusercontent.com/88069082/149673401-6ab5bd5b-82ca-40df-9999-b17b92d65b3e.jpg)
 
 <!-- 
 <p align="center">
