@@ -61,3 +61,18 @@ img.resize(1500,1000)
 img.save("image.jpg")
 
 ```
+
+**Actual Image (img.jpg)    Size: 664 x 1601**
+
+![img.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/img.jpg?raw=true)
+
+
+**Resized Image (image.jpg)    Size: 1000 x 1500**
+
+![image.jpg](https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true)
+
+
+<!-- 
+<p align="center">
+  <img src="https://github.com/Satyam-2001/Jpg-js/blob/main/Assets/image.jpg?raw=true" height="250px"/>
+</p> -->
