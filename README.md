@@ -17,10 +17,11 @@ npm install jpg-js
   <li><a href="#importing">Importing</a></li>
   <li><a href="#Open/Load-image">Open/Load Image </a></li>
   <li><a href="#resize">Resize image</a></li>
+  <li><a href="#crop">Crop image</a></li>
 </ul>
 
 
-<h1 id="importing">Importing⬆</h1>
+<h1 id="importing">Importing</h1>
 
 
 ```javascript
@@ -70,6 +71,35 @@ img.save("image.jpg")
 **Resized Image (image.jpg)**  &nbsp;  **Size: 1000 x 1500**
 
 ![image](https://user-images.githubusercontent.com/88069082/149673401-6ab5bd5b-82ca-40df-9999-b17b92d65b3e.jpg)
+
+<h2 id="crop">Crop image</h2>
+
+```javascript
+const Image = require("jpg-js")
+
+const img = Image.open("img.jpeg")
+
+//Crop a image left:0 , upper:0 , right:300 , low:200
+img.crop([0,0,300,200])
+
+//Saving processed image as image.jpeg
+img.save("image.jpeg")
+```
+
+**Actual Image (img.jpeg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149674079-68f1d7b2-f8b7-4c74-972f-6f45b38198ca.jpeg"/>
+</p> 
+
+**Crop Image (image.jpeg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149674077-ff5f7ccf-9445-4043-97bf-79b9c14de31d.jpeg"/>
+</p> 
+
+
+
 
 <!-- 
 <p align="center">
