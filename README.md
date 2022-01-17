@@ -120,7 +120,7 @@ img.save("image.jpeg")!
   <img src="https://user-images.githubusercontent.com/88069082/149674420-9eee5d37-c4cc-4ca9-a542-a9628fc2f81d.jpeg" />
 </p> 
 
-**Image From Array (image.jpeg)**
+**Greyscale Image (image.jpeg)**
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/88069082/149674418-7c18fe0e-0a47-4bca-97b9-a103cd28d7b7.jpeg" />
