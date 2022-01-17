@@ -25,6 +25,7 @@ npm install jpg-js
   <li><a href="#grey">Greyscale image</a></li>
   <li><a href="#array">Image From Array</a></li>
   <li><a href="#rotate">Rotate Image</a></li>
+  <li><a href="#flip">Flip Image</a></li>
 </ul>
 
 
@@ -238,6 +239,55 @@ img.save("image.jpg")
 <p align="center">
   <img src="https://user-images.githubusercontent.com/88069082/149702534-88d48d0d-d1c4-44d7-8fea-f81c382f4d90.jpg" height="800px"/>
 </p> 
+
+<h2 id="flip">Flip Image</h2>
+
+```javascript
+// Horizontal Flip
+const Image = require("jpg-js");
+
+img = Image.open("img.jpg");
+
+//Flipping image horizontally
+img.flip_horizontal();
+
+//Saving processed image as horizontal.jpg
+img.save("horizontal.jpg")
+```
+
+```javascript
+// Vertical Flip
+const Image = require("jpg-js");
+
+img = Image.open("img.jpg");
+
+//Flipping image vertically
+img.flip_vertical();
+
+//Saving processed image as vertical.jpg
+img.save("vertical.jpg")
+```
+
+**Actual Image (img.jpg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149720631-7e31bd11-f739-4bc7-a065-7bd1f6101793.jpg"/>
+</p> 
+
+
+**Horizontal Flip Image (horizontal.jpg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149720628-95a2d5f2-2a62-464d-aa18-663de7b9c713.jpg"/>
+</p> 
+
+
+**Verticall Flip Image (vertical.jpg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149720894-58bda67d-dc11-4df3-a4f6-7d0124eb4718.jpg"/>
+</p> 
+
 
 ## License
 
