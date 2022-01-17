@@ -1,6 +1,6 @@
 {
   "name": "jpg-js",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "description": "Advanced image processing and manipulation in JavaScript. ",
   "main": "index.js",
   "directories": {
