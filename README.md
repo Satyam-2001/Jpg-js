@@ -16,6 +16,7 @@ npm install jpg-js
 <ul>
   <li><a href="#importing">Importing</a></li>
   <li><a href="#Open/Load-image">Open/Load Image </a></li>
+  <li><a href="#data">Decoded/Encoded Data</a></li>
   <li><a href="#resize">Resize image</a></li>
   <li><a href="#crop">Crop image</a></li>
   <li><a href="#grey">Greyscale image</a></li>
@@ -47,6 +48,38 @@ Image {
   data: <Buffer 92 01 12 ff 72 00 12 ff 66 00 10 ff 5c 00 0d ff 12 ff 78 00 ... 4252206 more bytes>
 }
 */
+
+```
+
+<h2 id="data">Decoded/Encoded Data</h2>
+
+```javascript
+const Image = require("jpg-js");
+const fs = require("fs");
+
+img = Image.open("img.jpeg");
+
+//Decoded Data
+//also access by img.data
+const decoded = img.decodedData();
+console.log(decoded);
+/*
+{
+  height: 384,
+  width: 612,
+  data: <Buffer 6d 53 50 ff 6d 53 50 ff 6e 53 50 ff 70 52 4e ff ... 939982 more bytes>
+}
+*/
+
+//Enoded Data
+const encoded = img.encodedData();
+console.log(encoded);
+/*
+<Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 01 00 01 00 ... 269571 more bytes>
+*/
+
+//Saving encoded data back to jpeg
+fs.writeFileSync("image.jpeg",encoded);
 
 ```
 
@@ -172,5 +205,5 @@ img.save("image.jpeg");
 **image.jpeg** &nbsp; &nbsp; **Size : 1000 * 1000**
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/88069082/149675264-84e7d3d4-bc6b-470e-bc46-c22a3244d6cf.jpeg" height="600px"/>
+  <img src="https://user-images.githubusercontent.com/88069082/149675264-84e7d3d4-bc6b-470e-bc46-c22a3244d6cf.jpeg" height="500px"/>
 </p> 
