@@ -230,7 +230,7 @@ img.save("image.jpg")
 **Actual Image (img.jpg)**
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/88069082/149702536-10902d67-e4b2-4d4d-89bf-097a04286e93.jpg" height="400px"/>
+  <img src="https://user-images.githubusercontent.com/88069082/149702536-10902d67-e4b2-4d4d-89bf-097a04286e93.jpg" height="350px"/>
 </p> 
 
 **Rotated Image (image.jpg)**
