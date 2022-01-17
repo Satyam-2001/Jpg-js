@@ -21,6 +21,7 @@ npm install jpg-js
   <li><a href="#crop">Crop image</a></li>
   <li><a href="#grey">Greyscale image</a></li>
   <li><a href="#array">Image From Array</a></li>
+  <li><a href="#rotate">Rotate Image</a></li>
 </ul>
 
 
@@ -207,3 +208,32 @@ img.save("image.jpeg");
 <p align="center">
   <img src="https://user-images.githubusercontent.com/88069082/149675264-84e7d3d4-bc6b-470e-bc46-c22a3244d6cf.jpeg" height="500px"/>
 </p> 
+
+
+<h2 id="rotate">Rotate Image</h2>
+
+```javascript
+const Image = require("jpg-js");
+
+img = Image.open("img.jpg");
+
+//Rotating image clockwise
+img.rotate();
+
+//Saving processed image as image.jpg
+img.save("image.jpg")
+```
+
+**Actual Image (img.jpg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149702536-10902d67-e4b2-4d4d-89bf-097a04286e93.jpg" height="400px"/>
+</p> 
+
+**Rotated Image (image.jpg)**
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/88069082/149702534-88d48d0d-d1c4-44d7-8fea-f81c382f4d90.jpg" height="800px"/>
+</p> 
+
+
